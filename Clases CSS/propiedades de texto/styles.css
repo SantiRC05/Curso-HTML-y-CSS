@@ -1,0 +1,22 @@
+p{
+    color: red;
+    font-family: its15;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: justify;
+    text-decoration: none;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: none;
+}
+
+span{
+    color: blue;
+    text-decoration: line-through;
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
