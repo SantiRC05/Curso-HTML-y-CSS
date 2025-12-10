@@ -1,8 +1,8 @@
     .box{
         width: 100px;
         height: 100px;
-        background: red;
-        margin: 10px;
+        background: green;
+        margin: 15px;
     }
 
     .box-default{
