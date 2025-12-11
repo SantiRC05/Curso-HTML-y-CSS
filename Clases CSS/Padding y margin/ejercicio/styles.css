@@ -4,33 +4,63 @@ body{
     color: aliceblue;
 }
 
+.card_img{
+    margin: 0;
+    width: 9.3rem;
+    padding: 0.6rem 0 1.2rem 0;
+    filter: drop-shadow(0 0 0.25rem black) ;
+}
+
 .card{
     background: coral;
     text-align: center;
-    width: 400px;
+    width: 25rem;
     margin: auto;
-    margin-top: 50px;
+    margin-bottom: 0;
+    margin-top: 3.12rem;
+    box-shadow: 0 0 1.8rem blanchedalmond;
+    border-style: double;
+    border-color: black;
 }
 
-h1{
-    padding-top: 10px;
-    font-size: 22px;
+.effect{
+    background: coral;
+    text-align: center;
+    width: 25rem;
+    margin: auto;
+    margin-top: 0;
+    box-shadow: 0 0 1.8rem blanchedalmond;
+}
+
+.card_title{
+    padding-top: 0.6rem;
+    font-size: 1.3rem;
     margin: 0;
-    letter-spacing: 4px;
+    letter-spacing: 0.25rem;
 }
 
-h2{
-    font-size: 14px;
+.card_subtitle{
+    font-size: 0.87rem;
     font-weight: 100;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
     font-family: 'Times New Roman';
     font-style: italic;
 }
 
-p{
-    background-color: aliceblue;
+.card_content{
+    background-color: white;
     color: black;
     text-align: justify;
-    padding: 10px 50px 20px 10px;
+    margin: 0;
+    padding: 0.65rem 0.65rem 0.31rem 0.65rem;
     font-family: 'Lucida Sans';
+}
+
+.card_description{
+    color: black;
+    text-align: left;
+    margin: 0 0 0 0.18rem;
+    padding: 0;
+    font-family: 'Times New Roman';
+    font-size: 0.93rem;
 }
