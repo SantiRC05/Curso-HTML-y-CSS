@@ -49,6 +49,21 @@ textarea{
 }
 
 label{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     line-height: 2.5;
+}
+
+.chekbox{
+    width: auto;
+    height: 0.55rem;
+    box-shadow: none;
+}
+
+button{
+    margin-left: 13rem;
+    margin-top: 2rem;
+    box-shadow: 0 0 0.2rem whitesmoke;
+    background-color: #eee;
+    border: 0.10rem solid #222;
+    color: #222;
 }
