@@ -1,7 +1,7 @@
 body{
     margin: 0;
     color: #eee;
-    background-color: #222;
+    background: linear-gradient(to bottom, #333, #000);
 }
 
 h2{
@@ -34,7 +34,7 @@ input, textarea, select{
     padding: 0.375rem 0.75rem;
     border: none;
     border: 0.06rem solid #666;
-    box-shadow: 0 0 0.2rem #eee;
+    box-shadow: 0 0 0.1rem #eee;
     background-color: transparent;
     border-radius: 0.6rem;
     color: #eee;
@@ -67,8 +67,19 @@ label{
 button{
     margin-left: 13rem;
     margin-top: 2rem;
-    box-shadow: 0 0 0.2rem whitesmoke;
-    background-color: #eee;
-    border: 0.10rem solid #222;
-    color: #222;
+    box-shadow: 0 0 0.1rem whitesmoke;
+    background-color: transparent;
+    border: 0.17rem ridge #777;
+    color: #eee;
+}
+
+fieldset{
+    border-radius: 0.6rem;
+    border: 0.15rem ridge #666;
+    padding: 0 0.5rem 1rem 0.5rem;
+}
+
+legend{
+    padding: 0;
+    color: #777;
 }
