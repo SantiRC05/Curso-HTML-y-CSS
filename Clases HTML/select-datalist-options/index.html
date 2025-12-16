@@ -8,6 +8,8 @@
 <body>
     <form>
         <h2>Formulario de Contacto</h2>
+
+        <!--Simple Inputs-->
         <div class="form_input">
             <label>Nombre Completo</label>
             <input type="texto" placeholder="Santiago Rodríguez">
@@ -16,6 +18,8 @@
             <label>Email</label>
             <input type="email" placeholder="ejemplo@gmail.com">
         </div>
+
+        <!--Select y option-->
         <div class="form_input">
             <label>Opciones
             <select name="type-of-user">
@@ -25,6 +29,20 @@
             </select>
             </label>
         </div>
+
+        <!--Datalist-->
+        <div class="form_input">
+            <label>Referente
+                <input list="referente" name="referente">
+            <datalist id="referente" name="type-of-user">
+                <option value="El Santi">El mejor jugador</option>
+                <option value="El Toño">El brick</option>
+                <option value="El Claudio">El profe</option>
+            </i>
+            </label>
+        </div>
+
+        <!--Textarea-->
         <div class="form_input">
             <label>Mensaje</label>
             <textarea maxlength="200" placeholder="Comentarios"></textarea>
