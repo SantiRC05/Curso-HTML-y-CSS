@@ -78,3 +78,12 @@ fieldset{
 .check{
     margin: 0;
 }
+
+button{
+    background-color: transparent;
+    font-family: Georgia;
+    color: aliceblue;
+    margin-top: 1rem;
+    box-shadow: 0 0 0.1rem aliceblue;
+    margin-left: 12rem;
+}
