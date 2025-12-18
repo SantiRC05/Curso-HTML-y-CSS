@@ -32,7 +32,7 @@ form{
 input, textarea{
     width: 100%;
     padding: 0.2rem;
-    margin: 0.29rem;
+    margin: 1rem;
     border: 0.14rem solid #222;
     border-radius: 0.3rem;
     box-shadow: 0 0 0.13rem aliceblue;
@@ -48,8 +48,8 @@ textarea{
 
 label{
     color: aliceblue;
-    font-size: 1rem;
-    line-height: 2;
+    font-size: 1.1rem;
+    line-height: 1;
     margin: 0.8rem;
     margin-bottom: 0;
     font-family: 'Times New Roman';
@@ -64,7 +64,7 @@ legend{
 fieldset{
     margin: auto;
     margin-top: 0.9rem;
-    padding: 0 1rem 1rem 0rem;
+    padding: 0 1.8rem 1rem 0rem;
     border: 0.1rem solid aliceblue;
     border-radius: 0.6rem;
 }
@@ -73,6 +73,7 @@ fieldset{
     width: auto;
     height: 0.7rem;
     box-shadow: none;
+    margin: 1.4rem 0 0 0.4rem;
 }
 
 .check{
