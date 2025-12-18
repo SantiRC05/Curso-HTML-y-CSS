@@ -1,0 +1,25 @@
+body{
+    margin: 0.6rem;
+    background-color: aliceblue;
+    font-family: sans-serif;
+}
+
+.forms_inputs{
+    margin: auto;
+}
+
+input, textarea{
+    margin: 0.3rem;
+}
+
+h1{
+    padding: 0.3rem;
+    margin: auto;
+}
+
+form{
+    margin: auto;
+    box-shadow: 0 0 0.4rem #222;
+    width: 22rem;
+    height: 24rem;
+}
