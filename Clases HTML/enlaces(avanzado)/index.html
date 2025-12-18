@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +9,20 @@
 <body>
     <Form>
         <h1>Formulario</h1>
+    <fieldset>
+        <legend>Información Básica</legend>
     <div class="forms_inputs">
-        <label>Nombre Completo</label>
+    <label>Nombre Completo</label>
         <input type="text" placeholder="Santiago Rodríguez">
-        <input type="email" placeholder="Email">
-        <textarea name="text" id="Asunto">Asunto</textarea>
+    <label for="email">Email</label>
+        <input type="email" placeholder="ejemplo@gmail.com">
+    <label for="textarea">Solicitud</label>
+        <textarea name="text" id="Asunto"></textarea>
+    </div>
+    </fieldset>
+    <div class="forms_inputs">
+        <label class="check">Acepto los términos y condiciones</label>
+        <input type="checkbox" class="checkbox">
     </div>
     </Form>
 </body>
