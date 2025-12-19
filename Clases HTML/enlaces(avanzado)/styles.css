@@ -88,3 +88,8 @@ button{
     box-shadow: 0 0 0.1rem aliceblue;
     margin-left: 12rem;
 }
+
+a{
+    color: #69f;
+    text-decoration: none;
+}
