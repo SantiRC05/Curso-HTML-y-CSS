@@ -7,22 +7,37 @@
     <title>Tablas</title>
 </head>
 <body>
-    <table>
+    <table cellspacing>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
         <tr>
-            <td>Dato1</td>
-            <td>Dato2</td>
-            <td>Dato3</td>
+            <td>Santiago</td>
+            <td>Rodríguez</td>
+            <td>21</td>
         </tr>
-        <tr>
-            <td>Dato1</td>
-            <td>Dato2</td>
-            <td>Dato3</td>
-        </tr>
-        <tr>
-            <td>Dato1</td>
-            <td>Dato2</td>
-            <td>Dato3</td>
-        </tr>
+            <tr>
+                <td>Mike</td>
+                <td>Carvajal</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>Julio</td>
+                <td>Ramos</td>
+                <td>25</td>
+            </tr>
+        </tbody> 
+        <tfoot>
+            <tr>
+                <th class="total">Total de empleados</th>
+                <td colspan="2" class="numero">3</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
