@@ -1,0 +1,14 @@
+div{
+    font-family: sans-serif;
+}
+
+body{
+    color: red;
+}
+
+h1{
+    color: inherit /*Unset(retorna)-revert(revierte)*/;
+    font-family: initial;
+}
+
+/*Con inherit se va a heredar la fuente del mayor*/
