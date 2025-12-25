@@ -1,0 +1,78 @@
+h1{
+    color: #48e;
+    font-family: sans-serif;
+    margin: 3rem;
+}
+
+/*Cuando paso el mouse sobre el elemento cambia de color con el Hover*/
+h1:hover{
+    color: black;
+}
+
+/*Mientras le doy click cambia de color*/
+h1:active{
+    color: white;
+}
+
+/*Seleccionar el primer li*/
+li:first-child{
+    color: red;
+}
+
+/*Seleccionar el segundo li*/
+li:nth-child(2){
+    color: green;
+}
+
+/*Seleccionar intercalado li*/
+li:nth-child(2n){
+    color: violet;
+}
+
+/*Seleccionar el segundo li si hay un span de por medio*/
+li:nth-of-type(2){
+    color: violet;
+}
+
+/*Seleccionar el ultimo li*/
+li:last-child{
+    color: blue;
+}
+
+/*Seleccionar los li dentro de .lista pero que no tenga la clase excluir*/
+.lista li:not(.excluir){
+    color: purple;
+}
+
+
+
+div{
+    border: 0.3rem solid black;
+}
+
+/*Si el div esta vacio se le aplica*/
+div:empty{
+    background-color: green;
+    padding: 2.5rem;
+    border: none;
+}
+
+
+/*Revisa que el elemento este checkeado para aplicar*/
+input[type="checkbox"]{
+    margin: 3.4rem;
+}
+
+input[type="checkbox"]:checked{
+    margin: 0;
+}
+
+/*Seleccionar enlaces no visitados*/
+a:link{
+    color: red;
+}
+
+/*Seleccionar enlaces visitados*/
+a:visited{
+    color: green;
+}
