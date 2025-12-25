@@ -1,0 +1,14 @@
+/*Orden de especificaciones, el ID es el mas importante*/
+#titulo{
+    color: brown;
+}
+
+/*Puedo agregar cosas para ser mas especifico*/
+body .titulo{
+    color: red;
+}
+
+/*!IMPORTANT es el boss de los bosses*/
+h1{
+    color: blue !important;
+}
