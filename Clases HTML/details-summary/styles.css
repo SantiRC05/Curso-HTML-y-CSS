@@ -8,7 +8,6 @@ details{
     background-color: transparent;
     border: 0.1rem solid #ddd;
     padding: 0.7rem;
-    border-bottom: none;
 }
 
 details[open]{
