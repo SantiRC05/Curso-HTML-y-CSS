@@ -1,0 +1,36 @@
+section .elemento1,
+section .elemento2,
+section .elemento3{
+    color: red;
+}
+
+/*Modificando los elementos 1,2,3 que etsn dentro de un section*/
+section :is(.elemento1, .elemento2, .elemento3){
+    color: blue;
+}
+/*Si queremos que no cambie la especificidad, usamos where()*/
+
+section:has(.elemento1){
+    background-color: wheat;
+}
+
+/*En caso de que a UL le siga un div modificamos el UL*/
+ul:has(+div){
+    background-color: aliceblue;
+}
+
+div{
+    padding: 3rem;
+}
+
+label{
+    font-weight: bold;
+}
+
+label:has(input:invalid){
+    color: red;
+}
+
+label:has(input:valid){
+    color: green;
+}
