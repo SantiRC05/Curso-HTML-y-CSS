@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    font-family: Georgia;
+}
+
+.modal{
+    position: absolute;
+    background-color: #0009;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal_content{
+    background-color: #fff;
+    padding: 0.8rem 1.8rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.modal_title{
+    margin-top: 0.7rem;
+}
+
+.modal_close-button{
+    border: 0.13rem solid black;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.2rem 0.7rem;
+}
