@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.contenedor{
+    border: 0.2rem solid wheat;
+    margin: 1.7rem;
+    position: relative;
+    padding: 2rem;
+}
+
+.box{
+    width: 15rem;
+    height: 15rem;
+    background-color: #414;
+    color: #fff;
+    padding: 0.3rem;
+}
+
+.box--blue{
+    background-color: #009;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+}
+
+.box--red{
+    background-color: #800;
+    position: relative;
+}
