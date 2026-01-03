@@ -2,6 +2,12 @@ div{
     padding: 2.4rem;
 }
 
+h1{
+    box-shadow: 0 0 0.4rem black;
+    text-align: center;
+    border: 0.2rem solid #444;
+}
+
 h1::first-letter{
     color: red;
     font-size: 5rem;
@@ -22,6 +28,7 @@ input::placeholder{
     color: #444;
     font-family: 'Times New Roman', Times, serif;
     background-color: aliceblue;
+    padding: 1.5rem;
 }
 
 li::marker{
