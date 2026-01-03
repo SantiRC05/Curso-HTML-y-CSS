@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #222;
+}
+
+.contenido_principal{
+    display: flex;
+}
+
+.div_block{
+    padding: 1.7rem;
+    background-color: #59e5;
+    width: 22rem;
+    box-shadow: 0 0 1rem #444;
+    position: relative;
+    top: 1rem;
+    left: 10rem;
+}
+
+textarea{
+    background-color: transparent;
+    border: 0.2rem solid #222;
+    margin-left: 1.8rem;
+    min-width: 18rem;
+    max-width: 18rem;
+    min-height: 6rem;
+    max-height: 6rem;
+    color: white;
+    font-family: 'Lucida Sans';
+}
+
+.enlace{
+    background-color: #222;
+    color: #fff;
+    display: block;
+    border: 0.1rem solid black;
+    margin: 1.8rem;
+    padding: 1rem;
+}
+
+.div_inline{
+    padding: 1.7rem;
+    border: 0.4rem solid #59e5;
+    margin: 0.7rem;
+    width: 15rem;
+    height: 40rem;
+}
+
+p{
+    color: white;
+    margin: 0.2rem;
+    display: inline;
+    font-size: 1.5rem;
+}
+
+.nav{
+    background-color: #48f;
+}
+
+.nav_list{
+    margin: 0;
+}
+
+.nav_item{
+    display: inline-block;
+}
+
+.nav_link{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 1.4rem;
+    background-color: #48f;
+}
+
+.nav_link:hover{
+    background-color: #59e;
+}
+
+.link--button{
+    border: #48f;
+    border: 0.1rem solid white;
+    background-color: white;
+    color: #48f;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    margin-left: 2rem;
+}
+
+.link--button:hover{
+    background-color: transparent;
+    color: white;
+}
