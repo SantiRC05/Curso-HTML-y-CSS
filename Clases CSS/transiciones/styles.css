@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh
+}
+
+.box{
+    width: 9rem;
+    height: 9rem;
+    background-color: red;
+    margin-top: 2.6rem;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    transition-property: left;
+    transition-timing-function: linear;
+    transition-duration: 1s;
+    position: relative;
+    left: 0;
+    transition: left 1s linear;
+}
+
+body:hover .box{ 
+    left: 25rem;
+}
