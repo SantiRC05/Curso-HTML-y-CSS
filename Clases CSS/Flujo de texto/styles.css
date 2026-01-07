@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman';
+    background-color: #bbb;
+}
+
+.contenedor {
+    display: flex;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.box {
+    width: 12.5rem;
+    height: 12.5rem;
+    margin: auto;
+    margin-top: 2.7rem;
+    background-color: aliceblue;
+    border: 1px solid #0006;
+    /*El pre-wrap respeta el borde y lo que yo haga*/
+    white-space: pre-wrap;
+}
+
+.box2 {
+    width: 12.5rem;
+    height: 3.8rem;
+    margin: auto;
+    margin-top: 2.7rem;
+    background-color: aliceblue;
+    border: 1px solid #0006;
+    white-space: nowrap;
+    /*ellipsis me pone los 3 puntitos*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+h2 {
+    /*Esto es para ordenarlo*/
+    text-wrap: balance;
+}
