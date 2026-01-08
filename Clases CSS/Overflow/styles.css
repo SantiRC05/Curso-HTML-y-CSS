@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #ccc;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.box {
+    width: 9rem;
+    height: 9rem;
+    background-color: #fff;
+    color: red;
+    margin-left: 1rem;
+    margin-top: 2.6rem;
+    position: relative;
+    border: 0.1rem solid black;
+}
+
+.box--1 {
+    overflow: auto;
+}
+
+.box--2 {
+    overflow: hidden;
+}
+
+.box--3 {
+    overflow: scroll;
+}
+
+.Scroll {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 0.6rem;
+}
+
+.title {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
