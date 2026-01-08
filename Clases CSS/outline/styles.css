@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ddd;
+}
+
+.box {
+    width: 12rem;
+    background-color: red;
+    margin: auto;
+    margin-top: 2rem;
+    border: 0.2rem solid black;
+    padding: 0.6rem;
+}
+
+.box:hover {
+    outline: 0.4rem solid purple;
+}
+
+input {
+    margin: 3rem;
+    border: none;
+    border-top: 0.3rem solid black;
+    padding: 0.2rem;
+}
+
+input:focus {
+    border-color: blue;
+    color: blue;
+    outline: 0.3rem solid blue;
+    transition: outline .5s;
+}
+
+input:focus-visible {
+    /*Usar esto si quiero quitar el outline*/
+}
