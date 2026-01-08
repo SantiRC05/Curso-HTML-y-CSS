@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+img {
+    width: 22rem;
+    height: 10rem;
+    object-fit: cover;
+    border: 0.2rem solid black;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
