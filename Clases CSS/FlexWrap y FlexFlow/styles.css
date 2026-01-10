@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100vh;
+}
+
+.flex-item {
+    background-color: #800;
+    margin: 0.4rem;
+    color: aliceblue;
+    font-size: 2.6rem;
+    text-align: center;
+    width: 9rem;
+    direction: rtl;
+}
+
+.flex-item:first-child{
+    background-color: #180;
+}
+
+.flex-item:last-child {
+    background-color: black;
+}
