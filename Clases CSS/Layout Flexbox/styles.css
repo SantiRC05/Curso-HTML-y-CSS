@@ -53,6 +53,7 @@ h1 {
     margin: 0;
     font-size: 4rem;
     text-wrap: balance;
+    text-shadow: 0 1rem #0a3a5a;
 }
 
 /*---NAVBAR SECTION---*/
@@ -128,8 +129,9 @@ h1 {
 }
 
 main {
-    max-width: 50rem;
+    max-width: 87rem;
     margin: auto;
+    margin-top: 3rem;
     font-size: 1.6rem;
     text-wrap: pretty;
 }
