@@ -64,8 +64,9 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0.8rem 1.3rem;
+    padding-bottom: 0;
     font-family: 'Times New Roman';
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: sticky;
     top: 0;
     box-shadow: 0 0 1rem black;
@@ -124,7 +125,8 @@ h1 {
 }
 
 .nav_logo {
-    width: 6rem;
+    width: 9rem;
+    bottom: .4rem;
     position: relative;
 }
 
