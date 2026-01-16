@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ccc;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    border: 0.1rem solid black;
+    margin: 1.5rem;
+    align-items: center;
+    height: 20rem;
+}
+
+.flex-item {
+    background-color: #800;
+    color: aliceblue;
+    font-size: 2.6rem;
+    text-align: center;
+    flex: 1 1 6.2rem;
+}
+
+.flex-item:first-child{
+    background-color: #180;
+}
+
+.flex-item:last-child {
+    background-color: black;
+    align-self: stretch;
+}
+
+.item--5{
+    align-self: flex-start;
+}
