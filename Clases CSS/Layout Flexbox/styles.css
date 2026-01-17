@@ -131,9 +131,13 @@ h1 {
 }
 
 main {
-    max-width: 87rem;
+    max-width: 50rem;
     margin: auto;
     margin-top: 3rem;
     font-size: 1.6rem;
     text-wrap: pretty;
+}
+
+.body_inputs {
+    background-color: #ccc;
 }
