@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SRCSET y SIZES</title>
+</head>
+<body>
+    <!--Tener varias imagenes de los tamaños para poder ponerle recomendaciones a la web-->
+    <img src="kewltune.jpg" 
+    srcset="kewltune-small.jpg 400w, kewltune-medium.jpg 600w, kewltune.jpg 1000w"
+    sizes="(max-width: 400px) 300px, 
+    (max-width: 600px) 500px, 900px"
+    alt="kewltune">
+</body>
+</html>
