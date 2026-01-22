@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman';
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.flex-item {
+    background-color: #ccc;
+    padding: 2rem;
+    border: 0.1rem solid red;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 500px) {
+    .flexbox {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 2rem;
+        background-color: #ccc;
+        color: blueviolet;
+    }
+}
+
+@media print {
+    body {
+        font-size: 25pt;
+    }
+}
