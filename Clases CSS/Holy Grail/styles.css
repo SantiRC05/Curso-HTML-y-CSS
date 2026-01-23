@@ -32,12 +32,13 @@ p {
 }
 
 .main-wrapper {
-    max-width: 1024px;
+    max-width: 1400px;
 }
 
 .main-navbar ul {
     display: flex;
     padding: 0;
+    justify-content: center;
 }
 
 .main-navbar li {
@@ -74,7 +75,7 @@ nav a {
 }
 
 aside, main {
-    padding: 0.6rem 1.3rem;
+    padding: 0.9rem 1.3rem;
     flex-basis: 0;
     background-color: #fff;
 }
