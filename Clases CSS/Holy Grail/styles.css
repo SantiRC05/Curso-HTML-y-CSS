@@ -6,6 +6,7 @@ body {
     align-items: center;
     min-height: 100vh;
     justify-content: center;
+    background-color: #ededed;
 }
 
 div, body, nav, ul, footer, header {
@@ -69,15 +70,18 @@ nav a {
     flex-grow: 1;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
 }
 
 aside, main {
     padding: 0.6rem 1.3rem;
     flex-basis: 0;
+    background-color: #fff;
 }
 
 main {
     min-width: 300px;
+    flex-grow: 1;
 }
 
 .main-wrapper aside {
