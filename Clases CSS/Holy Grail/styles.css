@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: Georgia;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,7 +52,8 @@ p {
     padding: 0.8rem 0.9rem;
     font-size: 1.3rem;
     font-weight: bold;
-    transition: text-shadow 0.6s;
+    border-radius: .5rem;
+    transition: opacity .5s, background-color .8s, border-radius .6s;
 }
 
 nav a {
@@ -61,7 +62,9 @@ nav a {
 
 .main-navbar a:hover {
     opacity: 0.7;
-    text-shadow: 0 0 1rem black;
+    background-color: #ededed;
+    color: #338f38;
+    border-radius: .7rem;
 }
 
 /*MAIN SECCTION*/
@@ -100,6 +103,15 @@ main {
 
 .secundary-navbar a {
     color: #338f38;
+    border-radius: 0.4rem;
+    transition: background-color .6s, border-radius .8s, color .6s;
+}
+
+.secundary-navbar a:hover {
+    background-color: #338f38;
+    color: #fff;
+    border-radius: 0.8rem;
+    padding: 0.4rem;
 }
 
 .secundary-navbar li {
