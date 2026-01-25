@@ -53,7 +53,7 @@ p {
     font-size: 1.3rem;
     font-weight: bold;
     border-radius: .5rem;
-    transition: opacity .5s, background-color .8s, border-radius .6s;
+    transition: opacity .5s, background-color .5s, border-radius .8s;
 }
 
 nav a {
@@ -142,4 +142,12 @@ footer {
     .main-wrapper {
         flex-direction: column;
     }
+    }
+
+    img {
+        display: block;
+        width: 15rem;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
     }
