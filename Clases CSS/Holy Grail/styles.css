@@ -81,6 +81,8 @@ aside, main {
     padding: 0.9rem 1.3rem;
     flex-basis: 0;
     background-color: #fff;
+    flex: 1;
+    min-width: 250px;
 }
 
 main {
@@ -134,7 +136,12 @@ footer {
 
 @media screen and (max-width: 800px) {
     aside:last-child {
-        display: none;
+        width: 100%;
+    }
+    .main-navbar ul{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
     }
 }
 
