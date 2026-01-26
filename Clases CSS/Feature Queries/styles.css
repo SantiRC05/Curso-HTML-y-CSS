@@ -13,7 +13,7 @@ div, body {
     }
 }
 
-@supports not (display: grid;) {
+@supports not (display: grid) {
     body {
         display: flex;
         flex-direction: column;
