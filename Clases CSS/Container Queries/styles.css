@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.container {
+    container-type: inline-size;
+    container-name: main;
+}
+
+p {
+    font-size: 0.7srem;
+}
+
+@container main (max-width: 600px) {
+    p {
+        font-size: 2rem;
+        color: red;
+        background-color: black;
+    }
+}
