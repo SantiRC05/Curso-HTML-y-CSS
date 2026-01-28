@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 20% 200px 200px;
+    grid-template-rows: 100px 300px 500px;
+}
+
+.grid-item {
+    background-color: #48e;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 2.4rem;
+    color: aliceblue;
+}
