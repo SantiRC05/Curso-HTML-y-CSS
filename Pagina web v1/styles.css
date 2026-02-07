@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #e2eaff;
+    color: #101632dd;
+}
+
+body, div, ul, nav, header, footer, a, li, label {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_open-nav-button {
+
+}
+
+.header_logo {
+    max-width: 100%;
+    width: 64px;
+    margin: 10px 20px;
+}
