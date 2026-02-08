@@ -22,11 +22,34 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 .header_open-nav-button {
+    color: #48e;
+    font-size: 3rem;
+    font-weight: 600;
+    position: absolute;
+    right: 10px;
+}
+
+.header_checkbox {
+    display: none;
+}
+
+.header_nav {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    height: 100vh;
+    width: 100vh;
+    top: 0;
+    z-index: -1;
+}
+
+.header_checkbox:checked ~ .header_nav {
+    display: block;
 
 }
 
-.header_logo {
+.header-logo {
     max-width: 100%;
-    width: 64px;
+    width: 6rem;
     margin: 10px 20px;
 }
