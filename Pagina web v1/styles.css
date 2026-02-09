@@ -14,11 +14,15 @@ body, div, ul, nav, header, footer, a, li, label {
     padding: 0;
 }
 
+/*------HEADER SECTION------*/
+
 .header {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    container-type: inline-size;
+    container-name: header;
 }
 
 .header_open-nav-button {
@@ -27,6 +31,14 @@ body, div, ul, nav, header, footer, a, li, label {
     font-weight: 600;
     position: absolute;
     right: 10px;
+}
+
+.header_nav-list {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    margin: auto;
+    justify-content: space-evenly;
 }
 
 .header_checkbox {
@@ -38,18 +50,43 @@ body, div, ul, nav, header, footer, a, li, label {
     background-color: #fff;
     position: absolute;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     top: 0;
     z-index: -1;
 }
 
 .header_checkbox:checked ~ .header_nav {
-    display: block;
-
+    display: flex;
 }
 
 .header-logo {
     max-width: 100%;
-    width: 6rem;
+    width: 10rem;
     margin: 10px 20px;
 }
+
+.header_nav-item {
+    list-style: none;
+}
+
+.header_nav-item a {
+    color: #48e;
+}
+
+.header_nav-item a:not(:is(:hover, :active)) {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+/*------HEADER QUERIES------*/
+
+@container header (min-width: 600px) {
+    .header_nav {
+        position: static;
+        height: auto;
+        width: auto;
+    }
+}
+
+
+/*------HEADER ENDS------*/
