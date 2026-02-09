@@ -5,8 +5,8 @@
 body {
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #e2eaff;
-    color: #101632dd;
+    background-color: #E5E5E5;
+    color: #111111;
 }
 
 body, div, ul, nav, header, footer, a, li, label {
@@ -17,7 +17,8 @@ body, div, ul, nav, header, footer, a, li, label {
 /*------HEADER SECTION------*/
 
 .header {
-    background-color: #fff;
+    background-color: #111111;
+    color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +27,7 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 .header_open-nav-button {
-    color: #48e;
+    color: #CFAE70;
     font-size: 3rem;
     font-weight: 600;
     position: absolute;
@@ -47,7 +48,7 @@ body, div, ul, nav, header, footer, a, li, label {
 
 .header_nav {
     display: none;
-    background-color: #fff;
+    background-color: #111111;
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -61,7 +62,7 @@ body, div, ul, nav, header, footer, a, li, label {
 
 .header-logo {
     max-width: 100%;
-    width: 10rem;
+    width: 114px;
     margin: 10px 20px;
 }
 
@@ -70,7 +71,7 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 .header_nav-item a {
-    color: #48e;
+    color: #CFAE70;
     text-decoration: none;
 }
 
