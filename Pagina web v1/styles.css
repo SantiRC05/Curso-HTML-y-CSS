@@ -24,6 +24,7 @@ body, div, ul, nav, header, footer, a, li, label {
     align-items: center;
     container-type: inline-size;
     container-name: header;
+    z-index: 10;
 }
 
 .header_open-nav-button {
@@ -32,6 +33,7 @@ body, div, ul, nav, header, footer, a, li, label {
     font-weight: 600;
     position: absolute;
     right: 10px;
+    z-index: 20;
 }
 
 .header_nav-list {
@@ -50,14 +52,19 @@ body, div, ul, nav, header, footer, a, li, label {
     display: none;
     background-color: #111111;
     position: absolute;
+    font-size: 1.2rem;
     height: 100vh;
     width: 100vw;
     top: 0;
-    z-index: -1;
+    z-index: 10;
 }
 
 .header_checkbox:checked ~ .header_nav {
     display: flex;
+}
+
+.header_logo-container {
+    z-index: 20;
 }
 
 .header-logo {
@@ -121,6 +128,11 @@ body, div, ul, nav, header, footer, a, li, label {
         background-color: #ec99001f;
         border-radius: 0.4rem;
     }
+
+    .header_nav-item a:is(:hover, :active) {
+    text-decoration: none;
+    opacity: 100;
+}
 
     .header-logo {
         margin: 0.4rem;
