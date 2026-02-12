@@ -128,3 +128,127 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 /*------HEADER ENDS------*/
+
+/*------PROFILE SECTION------*/
+
+.profile {
+    container-name: profile;
+    container-type: inline-size;
+}
+
+.profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    background-color: #E5E5E5;
+    max-width: 1400px;
+}
+
+.profile_data-container {
+    max-width: 600px;
+    padding: 12px;
+}
+
+.profile_img-container {
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.profile-img {
+    max-width: 100%;
+    width: 720px;
+}
+
+h1 {
+    color: #ab905d;
+}
+
+.profile_skills-container h2 {
+    color: #ab905d;
+}
+
+.profile_skill {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    margin-left: 0;
+    max-width: 600px;
+    align-items: center;
+}
+
+.profile_skill-name {
+    color: #ab905d;
+    font-weight: bold;
+}
+
+.load-bar {
+    border: 2px solid #ab905d;
+    border-radius: 0.5rem;
+    color: #E5E5E5;
+    padding: 2px;
+    font-size: 12px;
+    width: 80%;
+    margin: 4px;
+    margin-left: 0;
+}
+
+.load-bar_bar {
+    background-color: #ab905d;
+    border-radius: 0.3rem;
+    padding: 4px 6px;
+    font-weight: 400;
+}
+
+.bar--80 {
+    width: 80%;
+}
+
+.bar--60 {
+    width: 60%;
+}
+
+.bar--1 {
+    width: 7%;
+}
+
+/*------PROFILE QUERIES------*/
+
+@container profile (min-width: 600px) {
+    .profile-wrapper {
+        flex-direction: row;
+        padding: 20px;
+        background-color: transparent;
+        height: 90vh;
+        margin: auto;
+    }
+
+    .profile_data-container {
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        border-radius: 0 25px 25px 0;
+        box-shadow: 0 0 9px #111111;
+    }
+
+    h1 {
+        margin-top: 0;
+        font-size: 4rem;
+        text-wrap: balance;
+    }
+
+    .profile_data {
+        max-width: 620px;
+    }
+    .profile_img-container {
+        max-height: initial;
+        border-radius: 25px 0 0 25px;
+    }
+
+    .profile-img {
+        height: 100%;
+        object-fit: cover;
+        width: 620px;
+        background-color: #E5E5E5;
+    }
+}
