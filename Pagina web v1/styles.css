@@ -22,6 +22,7 @@ body, div, ul, nav, header, footer, a, li, label {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     container-type: inline-size;
     container-name: header;
     z-index: 10;
@@ -264,3 +265,81 @@ h1 {
         background-color: #E5E5E5;
     }
 }
+
+/*------PROFILE ENDS------*/
+
+/*------PORTFOLIO SECTION------*/
+
+.portfolio {
+    background-color: #ab905d;
+    color: #E5E5E5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    container-name: portfolio;
+    container-type: inline-size;
+    justify-content: space-evenly;
+}
+
+.portfolio_tittle {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.portfolio_project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    gap: 12px;
+    padding: 12px;
+    min-height: 80vh;
+}
+
+.portfolio_project {
+    background-color: #CFAE70;
+    display: grid;
+    place-content: center;
+}
+
+.portfolio_project:hover {
+    opacity: 0.74;
+    outline: 2px solid #E5E5E5;
+}
+
+/*------PORTFOLIO QUERIES------*/
+
+@container portfolio (min-width: 56.25rem) {
+    .portfolio_project-container {
+        grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    }
+
+    .portfolio_project:first-child{
+        grid-column: span 2;
+    }
+
+    .portfolio_project:nth-child(6){
+        grid-column: span 2;
+    }
+}
+
+@container portfolio (min-width: 81.25rem) {
+    .portfolio_project-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .portfolio_project:first-child{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .portfolio_project:nth-child(6){
+        grid-column: span 4;
+    }
+}
+
+
+
+/*------PORTFOLIO ENDS------*/
