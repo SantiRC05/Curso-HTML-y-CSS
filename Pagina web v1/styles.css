@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -26,6 +27,8 @@ body, div, ul, nav, header, footer, a, li, label {
     container-type: inline-size;
     container-name: header;
     z-index: 10;
+    position: sticky;
+    top: 0;
 }
 
 .header_open-nav-button {
@@ -174,11 +177,11 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 h1 {
-    color: #ab905d;
+    color: #CFAE70;
 }
 
 .profile_skills-container h2 {
-    color: #ab905d;
+    color: #CFAE70;
 }
 
 .profile_skill {
@@ -191,12 +194,12 @@ h1 {
 }
 
 .profile_skill-name {
-    color: #ab905d;
+    color: #CFAE70;
     font-weight: bold;
 }
 
 .load-bar {
-    border: 2px solid #ab905d;
+    border: 2px solid #CFAE70;
     border-radius: 0.5rem;
     color: #E5E5E5;
     padding: 2px;
@@ -207,7 +210,7 @@ h1 {
 }
 
 .load-bar_bar {
-    background-color: #ab905d;
+    background-color: #CFAE70;
     border-radius: 0.3rem;
     padding: 4px 6px;
     font-weight: 400;
@@ -271,7 +274,7 @@ h1 {
 /*------PORTFOLIO SECTION------*/
 
 .portfolio {
-    background-color: #ab905d;
+    background-image: linear-gradient(to bottom, #0b0b0b, #111);
     color: #E5E5E5;
     min-height: 100vh;
     display: flex;
@@ -284,7 +287,9 @@ h1 {
 
 .portfolio_tittle {
     font-size: 2.5rem;
+    margin-top: 4rem;
     margin-bottom: 0;
+    color: #CFAE70;
 }
 
 .portfolio_project-container {
@@ -299,15 +304,20 @@ h1 {
 }
 
 .portfolio_project {
-    background-color: #CFAE70;
+    background: #1b1b1b;
+    color: #CFAE70;
     display: grid;
     place-content: center;
-    border-radius: 8px;
+    border: 1px solid #ab905d55;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #6c6c6c88;
+    transition: transform .3s, box-shadow .3s;
 }
 
 .portfolio_project:hover {
-    opacity: 0.74;
-    outline: 2px solid #E5E5E5;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px #0008;
+    opacity: 0.9;
 }
 
 /*------PORTFOLIO QUERIES------*/
@@ -357,7 +367,7 @@ h1 {
 }
 
 .form_tittle {
-    color: #ab905d;
+    color: #CFAE70;
     font-weight: 900;
     font-size: 2.4rem;
 }
@@ -368,6 +378,7 @@ h1 {
     max-width: 600px;
     width: 100%;
     display: grid;
+    margin-bottom: 40px;
 }
 
 .form_input-container :is(input,textarea) {
@@ -387,8 +398,9 @@ h1 {
 
 .form_input-container input[type="submit"] {
     padding: 12px;
-    background-color: #ab905d;
-    color: #E5E5E5;
+    background-color: #CFAE70;
+    font-weight: 700;
+    color: #FFFFFF;
 }
 
 /*------CONTACT QUERIES------*/
@@ -403,7 +415,7 @@ h1 {
         "message message"
         "submit submit";
         gap: 12px;
-        background-image: radial-gradient(#ab905d44, #ab905d22);
+        background-color: #FFFFFF;
         padding: 30px;
         border-radius: 12px;
         box-shadow: 0 0 40px #ab905d22;
@@ -430,7 +442,19 @@ h1 {
     }
 
     .form_input-container :is(input,textarea) {
-        box-shadow: none;
+        border-bottom: 1px solid #111111 ;
         border-radius: 4px;
     }
 } 
+
+/*------CONTACT ENDS------*/
+
+/*------FOOTER SECTION------*/
+
+footer {
+    padding: 60px;
+    text-align: center;
+    background-color: #111111;
+    color: #CFAE70;
+    font-size: 22px;
+}

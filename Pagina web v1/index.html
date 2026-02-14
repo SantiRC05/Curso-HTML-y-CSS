@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="logo.png" type="image/png">
-    <title>Document</title>
+    <title>My page</title>
 </head>
 <body>
     <header class="header">
@@ -16,16 +16,16 @@
         </div>
         <nav class="header_nav">
             <ul class="header_nav-list">
-                <li class="header_nav-item"><a href="#">ABOUT</a>
+                <li class="header_nav-item"><a href="#about">ABOUT</a>
                 </li>
-                <li class="header_nav-item"><a href="#">PORTFOLIO</a>
+                <li class="header_nav-item"><a href="#portfolio">PORTFOLIO</a>
                 </li>
-                <li class="header_nav-item"><a href="#">CONTACT</a>
+                <li class="header_nav-item"><a href="#contact">CONTACT</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main class="profile">
+    <main class="profile" id="about">
         <div class="profile-wrapper">
             <div class="profile_img-container">
                 <img src="santi.jpeg" class="profile-img">
@@ -71,7 +71,7 @@
         </div>
         </div>
     </main>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h2 class="portfolio_tittle">PORTFOLIO SECTION</h2>
         <div class="portfolio_project-container">
             <div class="portfolio_project">
@@ -94,7 +94,7 @@
             </div>
         </div>
     </section>
-    <section class="form">
+    <section class="form" id="contact">
         <h2 class="form_tittle">CONTACT</h2>
         <form class="form_form">
             <div class="form_input-container">
@@ -122,5 +122,8 @@
             </div>
         </form>
     </section>
+    <footer>
+        <strong>Santiago RC</strong> - Copyright
+    </footer>
 </body>
 </html>
