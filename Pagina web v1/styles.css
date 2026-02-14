@@ -302,6 +302,7 @@ h1 {
     background-color: #CFAE70;
     display: grid;
     place-content: center;
+    border-radius: 8px;
 }
 
 .portfolio_project:hover {
@@ -340,6 +341,96 @@ h1 {
     }
 }
 
-
-
 /*------PORTFOLIO ENDS------*/
+
+/*------CONTACT SECTION------*/
+
+.form {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    container-name: form;
+    container-type: inline-size;
+}
+
+.form_tittle {
+    color: #ab905d;
+    font-weight: 900;
+    font-size: 2.4rem;
+}
+
+.form_form {
+
+    padding: 12px;
+    max-width: 600px;
+    width: 100%;
+    display: grid;
+}
+
+.form_input-container :is(input,textarea) {
+    width: 100%;
+    padding: 9px;
+    font-size: 16px;
+    margin: 9px;
+    border: none;
+    box-shadow: 2px 2px 4px #0003;
+}
+
+.form_input-container textarea {
+    resize: none;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+.form_input-container input[type="submit"] {
+    padding: 12px;
+    background-color: #ab905d;
+    color: #E5E5E5;
+}
+
+/*------CONTACT QUERIES------*/
+
+@container form (min-width: 56.25rem) {
+    .form_form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "name lastname"
+        "email email"
+        "message message"
+        "submit submit";
+        gap: 12px;
+        background-image: radial-gradient(#ab905d44, #ab905d22);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 40px #ab905d22;
+    }
+
+    .form_input-container:first-child {
+        grid-area: name;
+    }
+
+    .form_input-container:nth-child(2) {
+        grid-area: lastname;
+    }
+
+    .form_input-container:nth-child(3) {
+        grid-area: email;
+    }
+
+    .form_input-container:nth-child(4) {
+        grid-area: message;
+    }
+
+    .form_input-container:nth-child(5) {
+        grid-area: submit;
+    }
+
+    .form_input-container :is(input,textarea) {
+        box-shadow: none;
+        border-radius: 4px;
+    }
+} 
