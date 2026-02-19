@@ -1,0 +1,468 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #E5E5E5;
+    color: #111111;
+}
+
+body, div, ul, nav, header, footer, a, li, label {
+    margin: 0;
+    padding: 0;
+}
+
+/*------HEADER SECTION------*/
+
+.header {
+    background-color: #111111;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    container-type: inline-size;
+    container-name: header;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+}
+
+.header_open-nav-button {
+    color: #CFAE70;
+    font-size: 3rem;
+    font-weight: 600;
+    position: absolute;
+    right: 10px;
+    z-index: 20;
+}
+
+.header_nav-list {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.header_checkbox {
+    display: none;
+}
+
+.header_nav {
+    display: none;
+    background-color: #111111;
+    position: absolute;
+    font-size: 1.2rem;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: 10;
+}
+
+.header_checkbox:checked ~ .header_nav {
+    display: flex;
+}
+
+.header_logo-container {
+    z-index: 20;
+}
+
+.header-logo {
+    max-width: 100%;
+    width: 114px;
+    margin: 10px 20px;
+}
+
+.header_nav-item {
+    list-style: none;
+}
+
+.header_nav-item a {
+    color: #CFAE70;
+    text-decoration: none;
+}
+
+.header_nav-item a:is(:hover, :active) {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+/*------HEADER QUERIES------*/
+
+@container header (min-width: 600px) {
+    .header_logo-container {
+        order: 2;
+    }
+
+    .header_nav {
+        display: flex;
+        position: static;
+        font-size: 1.2rem;
+        height: auto;
+        width: auto;
+        flex-grow: 1;
+        z-index: auto;
+        order: 1;
+    }
+
+    .header_nav-list {
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        height: auto;
+        gap: 3rem;
+        margin-left: 2rem;
+    }
+
+    .header_open-nav-button {
+        display: none;
+    }
+
+    .header_nav-item {
+        padding: 0.3rem;
+        transition: background-color .5s;
+    }
+
+    .header_nav-item:hover {
+        background-color: #ec99001f;
+        border-radius: 0.4rem;
+    }
+
+    .header_nav-item a:is(:hover, :active) {
+    text-decoration: none;
+    opacity: 100;
+}
+
+    .header-logo {
+        margin: 0.4rem;
+    }
+}
+
+/*------HEADER ENDS------*/
+
+/*------PROFILE SECTION------*/
+
+.profile {
+    container-name: profile;
+    container-type: inline-size;
+}
+
+.profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    background-color: #E5E5E5;
+    max-width: 1400px;
+}
+
+.profile_data-container {
+    max-width: 600px;
+    padding: 12px;
+}
+
+.profile_img-container {
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.profile-img {
+    max-width: 100%;
+    width: 720px;
+}
+
+h1 {
+    color: #CFAE70;
+}
+
+.profile_skills-container h2 {
+    color: #CFAE70;
+}
+
+.profile_skill {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    margin-left: 0;
+    max-width: 600px;
+    align-items: center;
+}
+
+.profile_skill-name {
+    color: #CFAE70;
+    font-weight: bold;
+}
+
+.load-bar {
+    border: 2px solid #CFAE70;
+    border-radius: 0.5rem;
+    color: #E5E5E5;
+    padding: 2px;
+    font-size: 12px;
+    width: 80%;
+    margin: 4px;
+    margin-left: 0;
+}
+
+.load-bar_bar {
+    background-color: #CFAE70;
+    border-radius: 0.3rem;
+    padding: 4px 6px;
+    font-weight: 400;
+}
+
+.bar--80 {
+    width: 80%;
+}
+
+.bar--60 {
+    width: 60%;
+}
+
+.bar--1 {
+    width: 7%;
+}
+
+/*------PROFILE QUERIES------*/
+
+@container profile (min-width: 600px) {
+    .profile-wrapper {
+        flex-direction: row;
+        padding: 20px;
+        background-color: transparent;
+        min-height: 90vh;
+        margin: auto;
+    }
+
+    .profile_data-container {
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        border-radius: 0 25px 25px 0;
+        box-shadow: 0 0 9px #111111;
+    }
+
+    h1 {
+        margin-top: 0;
+        font-size: 4rem;
+        text-wrap: balance;
+    }
+
+    .profile_data {
+        max-width: 620px;
+    }
+    .profile_img-container {
+        max-height: initial;
+        border-radius: 25px 0 0 25px;
+    }
+
+    .profile-img {
+        height: 100%;
+        object-fit: cover;
+        width: 620px;
+        background-color: #E5E5E5;
+    }
+}
+
+/*------PROFILE ENDS------*/
+
+/*------PORTFOLIO SECTION------*/
+
+.portfolio {
+    background-image: linear-gradient(to bottom, #0b0b0b, #111);
+    color: #E5E5E5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    container-name: portfolio;
+    container-type: inline-size;
+    justify-content: space-evenly;
+}
+
+.portfolio_tittle {
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    color: #CFAE70;
+}
+
+.portfolio_project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    gap: 12px;
+    padding: 12px;
+    min-height: 80vh;
+}
+
+.portfolio_project {
+    background: #1b1b1b;
+    color: #CFAE70;
+    display: grid;
+    place-content: center;
+    border: 1px solid #ab905d55;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #6c6c6c88;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.portfolio_project:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px #0008;
+    opacity: 0.9;
+}
+
+/*------PORTFOLIO QUERIES------*/
+
+@container portfolio (min-width: 56.25rem) {
+    .portfolio_project-container {
+        grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    }
+
+    .portfolio_project:first-child{
+        grid-column: span 2;
+    }
+
+    .portfolio_project:nth-child(6){
+        grid-column: span 2;
+    }
+}
+
+@container portfolio (min-width: 81.25rem) {
+    .portfolio_project-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .portfolio_project:first-child{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .portfolio_project:nth-child(6){
+        grid-column: span 4;
+    }
+}
+
+/*------PORTFOLIO ENDS------*/
+
+/*------CONTACT SECTION------*/
+
+.form {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    container-name: form;
+    container-type: inline-size;
+}
+
+.form_tittle {
+    color: #CFAE70;
+    font-weight: 900;
+    font-size: 2.4rem;
+}
+
+.form_form {
+
+    padding: 12px;
+    max-width: 800px;
+    width: 100%;
+    display: grid;
+    margin-bottom: 40px;
+}
+
+.form_input-container :is(input,textarea) {
+    width: 97%;
+    padding: 9px;
+    font-size: 16px;
+    margin: 9px;
+    border: none;
+    box-shadow: 2px 2px 4px #0003;
+}
+
+.form_input-container textarea {
+    resize: none;
+    min-height: 120px;
+    font-family: inherit;
+    border-bottom: 1px solid #111111;
+}
+
+.form_input-container input[type="submit"] {
+    padding: 12px;
+    background-color: #CFAE70;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+    .form_input-container input, textarea:focus {
+        outline: none;
+    }
+
+/*------CONTACT QUERIES------*/
+
+@container form (min-width: 56.25rem) {
+    .form_form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "name lastname"
+        "email email"
+        "message message"
+        "submit submit";
+        gap: 12px;
+        width: 80rem;
+        background-color: #FFFFFF;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 40px #ab905d22;
+    }
+
+    .form_input-container:first-child {
+        grid-area: name;
+    }
+
+    .form_input-container:nth-child(2) {
+        grid-area: lastname;
+    }
+
+    .form_input-container:nth-child(3) {
+        grid-area: email;
+    }
+
+    .form_input-container:nth-child(4) {
+        grid-area: message;
+    }
+
+    .form_input-container:nth-child(5) {
+        grid-area: submit;
+    }
+
+    .form_input-container :is(input,textarea) {
+        width: 100%;
+        box-shadow: 0 0 3px #CFAE70;
+        border-bottom: 1px solid #111111 ;
+        border-radius: 4px;
+    }
+} 
+
+/*------CONTACT ENDS------*/
+
+/*------FOOTER SECTION------*/
+
+footer {
+    padding: 60px;
+    text-align: center;
+    background-color: #111111;
+    color: #CFAE70;
+    font-size: 22px;
+}

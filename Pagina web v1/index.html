@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <title>Santi Page</title>
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" class="header_checkbox" id="open-menu">
+        <label for="open-menu" class="header_open-nav-button" role="button">=</label>
+        <div class="header_logo-container">
+            <img src="logo.png" class="header-logo" alt="ADA">
+        </div>
+        <nav class="header_nav">
+            <ul class="header_nav-list">
+                <li class="header_nav-item"><a href="#about">ABOUT</a>
+                </li>
+                <li class="header_nav-item"><a href="#portfolio">PORTFOLIO</a>
+                </li>
+                <li class="header_nav-item"><a href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="profile" id="about">
+        <div class="profile-wrapper">
+            <div class="profile_img-container">
+                <img src="santi.jpeg" class="profile-img">
+            
+        </div>
+        <div class="profile_data-container">
+            <div class="profile_data">
+                <div class="profile_description">
+                    <h1>Quien es Santiago Rodriguez?</h1> 
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime illo eligendi at minus vero modi facilis, beatae error dolorem veritatis ducimus atque sequi asperiores quidem excepturi commodi non, distinctio laboriosam!
+                    </p>               
+                </div>
+                <div class="profile_skills-container">
+                    <h2>SKILLS</h2>
+                    <ul>
+                        <li class="profile_skill">
+                            <div class="load-bar">
+                                <div class="load-bar_bar bar--80">80%</div>
+                            </div>
+                            <span class="profile_skill-name">HTML</span>
+                        </li>
+                        <li class="profile_skill">
+                            <div class="load-bar">
+                                <div class="load-bar_bar bar--60">60%</div>
+                            </div>
+                            <span class="profile_skill-name">CSS</span>
+                        </li>
+                        <li class="profile_skill">
+                            <div class="load-bar">
+                                <div class="load-bar_bar bar--1">1%</div>
+                            </div>
+                            <span class="profile_skill-name">ANGULAR</span>
+                        </li>
+                        <li class="profile_skill">
+                            <div class="load-bar">
+                                <div class="load-bar_bar bar--1">1%</div>
+                            </div>
+                            <span class="profile_skill-name">JS</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio_tittle">PORTFOLIO SECTION</h2>
+        <div class="portfolio_project-container">
+            <div class="portfolio_project">
+                <h2 class="portfolio_project-name">PROJECT</h2>
+            </div>
+            <div class="portfolio_project">
+                <h2 class="portfolio_project-name">PROJECT</h2>
+            </div>
+            <div class="portfolio_project">
+                <h2 class="portfolio_project-name">PROJECT</h2>
+            </div>
+            <div class="portfolio_project">
+                <h2 class="portfolio_project-name">PROJECT</h2>
+            </div>
+            <div class="portfolio_project">
+                <h2 class="portfolio_project-name">PROJECT</h2>
+            </div>
+            <div class="portfolio_project">
+                <h2 class="portfolio_project-name">PROJECT</h2>
+            </div>
+        </div>
+    </section>
+    <section class="form" id="contact">
+        <h2 class="form_tittle">CONTACT</h2>
+        <form class="form_form">
+            <div class="form_input-container">
+                <label for="">Nombre
+                    <input type="text" placeholder="John">
+                </label>
+            </div>
+            <div class="form_input-container">
+                <label for="">Apellido
+                    <input type="text" placeholder="Doe">
+                </label>
+            </div>
+            <div class="form_input-container">
+                <label for="">E-mail
+                    <input type="email" placeholder="mail@example.com">
+                </label>
+            </div>
+            <div class="form_input-container">
+                <label for="">Mensaje
+                    <textarea placeholder="Your message"></textarea>
+                </label>
+            </div>
+            <div class="form_input-container">
+                <input type="submit">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <strong>Santiago RC</strong> - Copyright
+    </footer>
+</body>
+</html>
