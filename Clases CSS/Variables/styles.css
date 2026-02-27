@@ -8,18 +8,20 @@ body {
     padding: 20px;
     --color-principal: #38bc0c;
     --tamaño-principal: 2rem;
+    --color-letra: #a7cc00;
+    --border: 8px solid var(--color-letra);
 }
 
 .box {
     --color-principal: #700cbc;
     display: grid;
     place-content: center;
-    color: #fff;
+    color: var(--color-letra);
     margin: 120px auto;
     font-size: 30px;
     font-size: clamp(var(--tamaño-principal), 2.2vw, 4rem);
     padding: 0 40px;
-    border: 6px solid #000;
+    border: var(--border);
 }
 
 .box:first-child {
