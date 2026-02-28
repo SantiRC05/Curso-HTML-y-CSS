@@ -8,6 +8,7 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #E5E5E5;
     color: #111111;
+    --color-letra: #CFAE70;
 }
 
 body, div, ul, nav, header, footer, a, li, label {
@@ -29,7 +30,7 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 .header_open-nav-button {
-    color: #CFAE70;
+    color: var(--color-letra);
     font-size: 3rem;
     font-weight: 600;
     position: absolute;
@@ -79,7 +80,7 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 .header_nav-item a {
-    color: #CFAE70;
+    color: var(--color-letra);
     text-decoration: none;
 }
 
@@ -183,11 +184,11 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 h1 {
-    color: #CFAE70;
+    color: var(--color-letra);
 }
 
 .profile_skills-container h2 {
-    color: #CFAE70;
+    color: var(--color-letra);
 }
 
 .profile_skill {
@@ -200,12 +201,12 @@ h1 {
 }
 
 .profile_skill-name {
-    color: #CFAE70;
+    color: var(--color-letra);
     font-weight: bold;
 }
 
 .load-bar {
-    border: 2px solid #CFAE70;
+    border: 2px solid var(--color-letra);
     border-radius: 0.5rem;
     color: #E5E5E5;
     padding: 2px;
@@ -216,7 +217,7 @@ h1 {
 }
 
 .load-bar_bar {
-    background-color: #CFAE70;
+    background-color: var(--color-letra);
     border-radius: 0.3rem;
     padding: 4px 6px;
     font-weight: 400;
@@ -311,7 +312,7 @@ h1 {
 
 .portfolio_project {
     background: #1b1b1b;
-    color: #CFAE70;
+    color: var(--color-letra);
     display: grid;
     place-content: center;
     border: 1px solid #ab905d55;
@@ -379,7 +380,7 @@ h1 {
 }
 
 .form_tittle {
-    color: #CFAE70;
+    color: var(--color-letra);
     font-weight: 900;
     font-size: 2.4rem;
 }
@@ -461,7 +462,7 @@ h1 {
 
     .form_input-container :is(input,textarea) {
         width: 100%;
-        box-shadow: 0 0 3px #CFAE70;
+        box-shadow: 0 0 3px var(--color-letra);
         border-bottom: 1px solid #111111 ;
         border-radius: 4px;
     }
@@ -475,7 +476,7 @@ footer {
     padding: 60px;
     text-align: center;
     background-color: #111111;
-    color: #CFAE70;
+    color: var(--color-letra);
     font-size: 22px;
 }
 
