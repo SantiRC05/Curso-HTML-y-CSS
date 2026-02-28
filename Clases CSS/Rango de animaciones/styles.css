@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ccc;
+}
+
+.crecedor {
+    height: 100vh;
+}
+
+/*En animation timeline puede ir view()*/
+
+.box {
+    height: 400px;
+    view-timeline: --cajita block;
+    background-color: #48e;
+    padding: 20px;
+    animation: llenar-barra;
+    animation-fill-mode: both;
+    animation-timeline: --cajita;
+    animation-range: contain 50%;
+    animation-range-end: contain 100%;
+}
+
+
+
+@keyframes llenar-barra {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
