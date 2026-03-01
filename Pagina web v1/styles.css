@@ -9,6 +9,7 @@ body {
     background-color: #E5E5E5;
     color: #111111;
     --color-letra: #CFAE70;
+    --background-color-negro: #111111;
 }
 
 body, div, ul, nav, header, footer, a, li, label {
@@ -19,7 +20,7 @@ body, div, ul, nav, header, footer, a, li, label {
 /*------HEADER SECTION------*/
 
 .header {
-    background-color: #111111;
+    background-color: var(--background-color-negro);
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
@@ -52,7 +53,7 @@ body, div, ul, nav, header, footer, a, li, label {
 
 .header_nav {
     display: none;
-    background-color: #111111;
+    background-color: var(--background-color-negro);
     position: absolute;
     font-size: 1.2rem;
     height: 100vh;
@@ -251,7 +252,7 @@ h1 {
         display: flex;
         align-items: center;
         border-radius: 0 25px 25px 0;
-        box-shadow: 0 0 9px #111111;
+        box-shadow: 0 0 9px var(--background-color-negro);
     }
 
     h1 {
@@ -407,7 +408,7 @@ h1 {
     resize: none;
     min-height: 120px;
     font-family: inherit;
-    border-bottom: 1px solid #111111;
+    border-bottom: 1px solid var(--background-color-negro);
 }
 
 .form_input-container input[type="submit"] {
@@ -463,7 +464,7 @@ h1 {
     .form_input-container :is(input,textarea) {
         width: 100%;
         box-shadow: 0 0 3px var(--color-letra);
-        border-bottom: 1px solid #111111 ;
+        border-bottom: 1px solid var(--background-color-negro) ;
         border-radius: 4px;
     }
 } 
@@ -475,7 +476,7 @@ h1 {
 footer {
     padding: 60px;
     text-align: center;
-    background-color: #111111;
+    background-color: var(--background-color-negro);
     color: var(--color-letra);
     font-size: 22px;
 }
@@ -487,7 +488,7 @@ footer {
 @keyframes header-movement {
     from {
         padding: 20px 0;
-        background-color: #111111;
+        background-color: var(--background-color-negro);
     }
 
     to {
