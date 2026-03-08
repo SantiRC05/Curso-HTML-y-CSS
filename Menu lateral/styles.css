@@ -11,12 +11,9 @@ body {
     --bg-color: #e8e6e6;
     --sidebar-color: #223353;
     --dark-color: #3f70a3;
+    --text-color: #d7b039;
     background-color: var(--bg-color);
     font-family: monstserrat;
-}
-
-img {
-    width: 6rem;
 }
 
 .sidebar {
@@ -93,7 +90,51 @@ img {
     box-shadow: 4px -4px 0 4px var(--bg-color);
 }
 
+/*Sidebar picture styles*/
+
+.sidebar_picture {
+    position: relative;
+    z-index: 10;
+}
+
+.sidebar_picture img {
+    width: clamp(4rem, 100%, 20rem);
+    margin: auto;
+    opacity: .82;
+}
+
+/*Sidebar profile menu styles*/
+
+.sidebar_profile img {
+    border-radius: 10%;
+    width: 2rem;
+}
+
+.item--profile .profile_option {
+    font-size: .8rem;
+    padding: 0 12px 0 9px;
+    color: inherit;
+}
+
+.item--profile {
+    width: fit-content;
+    margin: 12px;
+    color: var(--text-color);
+}
+
+.item--profile:hover {
+    border-radius: 0 20px 20px 0;
+    color: var(--sidebar-color);
+}
+
+.item--profile:hover img {
+    opacity: .7;
+}
+
+.item--profile::before, .item--profile::after {
+    display: none;
+}
+
 .sidebar_form {
     position: absolute;
-    display: none;
 }
