@@ -7,6 +7,10 @@ body, div, ul, li, a, h1, h2 {
     padding: 0;
 }
 
+label, .sidebar {
+    user-select: none;
+}
+
 body {
     --bg-color: #e8e6e6;
     --sidebar-color: #223353;
@@ -135,6 +139,38 @@ body {
     display: none;
 }
 
+input[type='checkbox'] {
+    display: none;
+}
+
 .sidebar_form {
     position: absolute;
+    z-index: 20;
+    right: -1rem;
+}
+
+.sidebar label {
+    position: relative;
+    color: var(--dark-color);
+    background-color: var(--bg-color);
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: .4rem;
+}
+
+.sidebar label::before, 
+.sidebar label::after {
+    content: '';
+    background-color: var(--bg-color);
+    position: absolute;
+    width: 10px;
+    height: 25px;
+    background-color: transparent;
+}  
+
+.sidebar label::before {
+    top: -25px;
+    left: 19px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 4px 4px 0 4px var(--bg-color);
 }
