@@ -149,6 +149,10 @@ input[type='checkbox'] {
     right: -1rem;
 }
 
+.sidebar_form .open--buttom {
+    display: none;
+}
+
 .sidebar label {
     position: relative;
     color: var(--dark-color);
@@ -173,4 +177,49 @@ input[type='checkbox'] {
     left: 19px;
     border-bottom-right-radius: 25px;
     box-shadow: 4px 4px 0 4px var(--bg-color);
+}
+
+.sidebar label::after {
+    bottom: -25px;
+    left: 19px;
+    border-top-right-radius: 25px;
+    box-shadow: 4px -4px 0 4px var(--bg-color);
+}
+
+input[type='checkbox']:checked ~ label {
+    color: var(--bg-color);
+    background-color: var(--sidebar-color);
+}
+
+input[type='checkbox']:checked ~ label::before,
+input[type='checkbox']:checked ~ label::after {
+    display: none;
+}
+
+.sidebar:has(input[type='checkbox']:checked) {
+    width: fit-content;
+}
+
+.sidebar:has(input[type='checkbox']:checked) .sidebar_form label {
+    display: none;
+}
+
+.sidebar:has(input[type='checkbox']:checked) .sidebar_form .open--buttom {
+    display: block;
+}
+
+.sidebar:has(input[type='checkbox']:checked) picture {
+    width: fit-content;
+}
+
+.sidebar:has(input[type='checkbox']:checked) .sidebar_picture img {
+    max-width: 3rem;
+}
+
+.sidebar:has(input[type='checkbox']:checked) .sidebar_picture {
+    margin-left: 0;
+}
+
+.sidebar:has(input[type='checkbox']:checked) :is(.sidebar_item a, .profile_option) {
+    display: none;
 }
