@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body, div, ul, li, a, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: sans-serif;
+    --bg-color: #292929;
+    --card-bg-color: #af8ac649;
+    --card-color: #af8ac6;
+    --dark-color: #340101;
+    --text-color: #444;
+    background-color: var(--bg-color);
+    height: 200dvh;
+}
+
+header {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    filter: grayscale();
+    width: 750px;
+    mix-blend-mode: screen;
+    position: fixed;
+    top: 0;
+    animation: aparecer both;
+    animation-timeline: scroll();
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        filter: grayscale()
+        translate: 0 -20%;
+        scale: .8;
+    }
+
+    100% {
+        opacity: 1;
+        filter: grayscale();
+        translate: 0 0;
+        scale: 1;
+    }
+}
