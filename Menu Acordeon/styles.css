@@ -4,10 +4,10 @@
 
 body {
     font-family: sans-serif;
-    --bg-color: #ffb18c;
+    --bg-color: #3243fe;
     --text-color: #333;
     --faq-color: #fff;
-    --dark-color: #ca7600;
+    --dark-color: #d0ff00;
 }
 
 body, div, ul, li, a, h1, h2, h3, p {
@@ -19,15 +19,16 @@ body {
 }
 
 .faq {
-    max-width: clamp(300px, 70%, 700px);
+    max-width: clamp(300px, 700%, 700px);
     margin: auto;
+    padding: 4px;
 }
 
 details {
     background-color: var(--faq-color);
     margin: 7px;
     padding: 7px;
-    max-height: 34px;
+    max-height: 54px;
     transition: max-height 1.4s;
     overflow: hidden;
 }
@@ -43,6 +44,7 @@ details[open] .content {
 summary {
     user-select: none;
     position: relative;
+    font-weight: bold;
 }
 
 .content {
@@ -60,6 +62,7 @@ summary::marker {
 summary::before {
     color: var(--dark-color);
     content: '+';
+    text-shadow: 0 0 4px #000000;
     position: absolute;
     right: 0;
     font-weight: 700;
@@ -67,14 +70,14 @@ summary::before {
 
 details[open] summary::before {
     content: '-';
-    font-weight: 700;
+    font-weight: 900;
 }
 
 details b {
     background-color: var(--dark-color);
     padding: 2px 4px;
-    color: #fff;
-    margin-right: 4px;
+    color: #000000;
+    margin-right: 10px;
 }
 
 @keyframes aparecer {
