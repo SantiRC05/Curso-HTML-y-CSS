@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+    clip-path: circle(30% at 40% 30%);
+}
