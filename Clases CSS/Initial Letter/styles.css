@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box {
+    font-size: 30px;
+    padding: 0 40px;
+    border: 6px solid #7837c7;
+    margin: 14px;
+}
+
+p::first-letter {
+    initial-letter: 3;
+    color: #7837c7;
+    padding: 10px;
+    padding-bottom: 0;
+    font-family: 'Times New Roman';
+}
